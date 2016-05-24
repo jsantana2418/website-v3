@@ -1,0 +1,183 @@
+Vocabulary
+
+HTML5 - New HTML elements that are now commonplace along with a few new pieces of browser technology.
+Attributes - Attributes are extra information inside of an HTML element that provides additional data about the element.
+HTML Elements
+
+<!DOCTYPE html> - The document type element tells the browser what kind of content to expect in a web page.
+<html> - The container or document root for the HTML document.
+<head> - The head of the document is a container for meta information about the HTML document itself.
+<body> - The body of the document contains the content and remaining structure of the document.
+<title> - The title of the document typically appears in browser tabs and search engine results.
+<meta charset="utf-8"> - The character set, typically set to UTF-8 to help describe how the page is formatted.
+
+Vocabulary
+
+Code Completion - A feature of text editors (like Workspaces) that automatically completes code as you type.
+HTML Entity - Special characters in HTML, such as the copyright symbol.
+HTML Elements
+
+<header> - The header element helps to structure the content. This is different from the head element, which is just for document metadata.
+<section> - Sections break up logical groupings of information, just like sections of a newspaper.
+<footer> - The footer element is a complement to the header element. It represents the bottom of a content area.
+<h2> - The second level headline element, similar to first level headlines. Typically these appear slightly smaller by default.
+<p> - The paragraph element should contain text in sentence or paragraph form.
+
+
+HTML Elements
+
+<a> - The anchor element allows for two HTML pages to be linked together.
+<nav> - The navigation element is a semantic element that wraps any type of site navigation.
+<ul> - The unordered list element contains list item elements and is typically styled with bullet points by default.
+<li> - The list item element makes it possible to format text in a list form. Each list item element should go inside of an ordered or unordered list element.
+
+Vocabulary
+
+Relative Path - Describes the location of a file using a partial file path that's based on the location of the original file relative to the file that's being referenced.
+Absolute Path - Describes the location of a file using the full file path.
+HTML Elements
+
+<img> - The image element is a self closing element with two required attributes. The source (src) attribute points to the image file and the alternate (alt) attribute describes the image using text.
+
+
+
+
+<!-- Write your comments here -------------------------------------------------------------------------------------------->
+
+Vocabulary
+
+CSS - Cascading Style Sheets, the computer code that defines the visual presentation of web pages.
+Rule - The entirety of a CSS selector and its declarations.
+Selector - CSS syntax that defines elements on a page to which declarations should be applied.
+Declaration - Pairs of CSS properties and values that define how an element should be styled.
+Property - CSS syntax that defines which part of an element should be styled, such as its color, size, position, and so on.
+Value - CSS syntax that sets the variable units for properties.
+HTML Elements
+
+<style> - The style element can contain CSS code that will be applied to the HTML. Typically it's better to keep CSS in an external stylesheet.
+CSS Selectors
+
+Type Selector - Also known as an "element selector" this CSS selector that isolates all the elements of a given type.
+
+example: 
+	footer {
+	     color: blue;
+		}
+
+	selector {
+	     property: value;
+		 }
+
+	
+
+Descendent Selector - CSS selector that selects all the elements of a given type that are nested inside another type of element.
+CSS Properties
+
+color - Sets the text color of an element. Accepts any CSS color unit.
+background-color - Sets the background color of an element. Accepts any CSS color unit.
+
+CSS Selectors
+
+ID Selector - CSS selector that selects a single element based on its ID attribute.
+CSS Properties
+
+text-decoration - Primarily used to add or remove underlines from text.
+
+CSS Properties
+
+max-width - Sets the maximum width of an element. Accepts any CSS length unit.
+margin - Sets the space around the exterior four sides of an element. Accepts any CSS length unit.
+padding - Sets the space on the interior four sides of an element. Accepts any CSS length unit.
+
+Vocabulary
+
+Mobile First - The technique of creating mobile websites first and then progressively enhancing them to create the desktop version.
+CSS Properties
+
+text-align - Sets the justification of text, similar to a word processor. For example, text can be set to be aligned to the left, right, or center.
+
+CSS Selectors
+
+Pseudo-Class - Dynamic selectors that change based on user interaction with the browser, such as hovering over a link, for example.
+
+CSS Selectors
+
+Class Selector - Selects any HTML element that contains a matching class attribute.
+
+CSS Properties
+
+font-family - Defines which fonts should be applied to text.
+font-size - Sets the size of text in either relative or absolute units.
+
+CSS Properties
+
+font-weight - Sets the visual weight of text, which is more commonly known as "bold" as is the case in word processors.
+line-height - Set the amount of space between each line of text. Accepts any CSS length unit.
+
+CSS Properties
+
+list-style - Sets the style of numbers or bullet points for ordered and unordered lists. The marks can also be removed entirely with the value "none".
+float - Allows an element to be taken out of the normal flow and placed to the left or right of its container. Text and other inline elements will wrap around it.
+
+CSS Properties
+
+clear - The clear property specifies whether an element can be adjacent to floated elements or if it should be moved down and "clear" any floated elements.
+Resources
+
+Vocabulary
+
+Block-Level Elements - Block elements occupy the width of their containers and generally include a line break before and after the element.
+Inline Elements - Inline elements occupy the width of their contents and do not begin a new line when formatted as text.
+CSS Properties
+
+display - Sets whether an element should be rendered as a block element, inline element, or inline-block element.
+
+CSS Properties
+
+border-radius - Defines the roundness of a border corner. Accepts any CSS length unit.
+
+CSS Properties
+
+background-image - Accepts an image path that applies the file to the background of an element.
+background-size - Sets the size of background images.
+background-repeat - Sets whether or not a background image should be repeated. By default, backgrounds will repeat.
+
+Vocabulary
+
+Responsive Web Design - A technique for creating websites that work on multiple screen resolutions via the combination of fluid images, fluid grids, and media queries.
+
+
+Vocabulary
+
+Breakpoints - The specific screen widths where a responsive layout "breaks" and needs to change in order to accommodate the screen.
+CSS Syntax
+
+@media - Media queries use the @media CSS rule to define conditions of the browser medium. In other words, it allows for CSS styling to only be included if certain conditions are met, such as a specific browser width.
+
+CSS Selectors
+
+:nth-child(An+B) - The nth-child pseudo-class matches A(n)+B-1 siblings in the document tree. The A value that precedes n is required. By itself, this will match every "nth" element in a group. Both A and B must be integers.
+Code Correction
+
+In this video, the selector :nth-child(4n) is used to correct a responsive issue on every 4th item. In other words, this will select the 4th item, 8th item, 12th item, and so on. This fixes the specific problem in the video, but if more gallery items are added beyond the 5 that are present in this project, the design will start to break again. That's because there are 3 items in each row, and every 4th item could appear at the beginning, middle, or end of a row.
+
+Instead, we want to select the first item in each row. A more robust solution is to use the selector :nth-child(3n + 1) instead. This will select every 3rd item plus 1. In other words, this will select the 4th item, 7th item, 10th item, and so on.
+
+CSS Properties
+
+border - CSS shorthand property that allows for a visual outline or "border" to be applied to an element. Accepts a length unit to define the border-width, a keyword to define the border-style, and a color unit for the border-color.
+
+Vocabulary
+
+Cross-Browser - The idea of a website or app working on most popular browsers. Typically during the development of a website, cross-browser testing is conducted to help create a consistent experience regardless of the user's choice of web browser.
+
+Vocabulary
+
+Protocol - A system of rules for the exchange of digital information. On the web, the Hyper Text Transfer Protocol (HTTP) allows for the exchange of websites.
+Subdomain - A smaller domain that is part of a larger domain. For example, "www" is a common subdomain.
+Domain - A unique identifying string that defines a realm of authority or control on the web.
+TLD - TLD stands for Top Level Domain and it is the highest level domain in the Domain Name System (DNS). This is the part of the domain such as .com, .net, and .org, that comes at the end.
+
+Vocabulary
+
+SFTP - SSH File Transfer Protocol (also known as Secure File Transfer Protocol) is a network protocol that allows for the transfer of files to a web server.

@@ -1,0 +1,126 @@
+/* Media queries in CSS3 extend the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+
+Media queries can be used to check many things, such as:
+
+width and height of the viewport
+width and height of the device
+orientation (is the tablet/phone in landscape or portrait mode?)
+resolution
+Using media queries are a popular technique for delivering a tailored style sheet to tablets, iPhone, and Androids.
+
+@media mediatype and (expressions) {
+    CSS-Code;
+} */
+/* resolution below 480px wide will scale and float the following elements for mobile design */
+@media screen and (min-width: 480px) {
+  /***********************************
+  TWO COLUMN LAYOUT
+  ************************************/
+/* in the contact page the following two ID elements defined where float in their respective float value */
+  #primary {
+    width: 50%;
+    float: left;
+  }
+
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+
+
+  /*body {
+    background: green;
+  }*/
+
+
+
+  /***********************************
+  3 * 5 = 15
+  100% - 15% = 85%
+  85 / 3 = 28.33333333333
+  ************************************/
+
+  /***********************************
+  PAGE: PORTFOLIO
+  ************************************/
+
+  #gallery li {
+    width: 28.3333%;
+  }
+
+  #gallery li:nth-child(3n + 1) {
+    clear: left;
+  }
+
+  /***********************************
+  PAGE: ABOUT
+  ************************************/
+
+  .profile-photo {
+    float: left;
+    margin: 0 5% 80px 0;
+  }
+
+  .main-header {
+    height: 600px;
+  }
+
+}
+
+@media screen and (min-width: 660px) {
+
+  /***********************************
+  PAGE: HEADER
+  ************************************/
+
+/*body {
+  background: blue;
+}*/
+
+/* nav links float to the right when enlarging past 660px and adjusting properties */
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    text-align: right;
+    width: 45%;
+  }
+
+/* when navigation links are hover or selected it will appear black instead of grey in the mobile version. */
+  nav a.selected, nav a:hover {
+      color: #000;
+  }
+/* logo heading text will float to the left when enlarging past 660px */
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+/* font size adjusted when enlarging past 660px */
+  h1 {
+    font-size: 3.5em;
+  }
+/* font size adjusted when enlarging past 660px */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /*.main-header {
+    max-height: 380px;
+  }*/
+  /*header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }*/
+
+  /*.t-border {
+    border-top: 2px solid #000;
+    margin-top: 50px;
+    }*/
+
+    /*.main-header {
+      height: 800px;
+    }*/
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in. -->
+<html> <!-- The <html> tag tells the browser that this is an HTML document. -->
+
+<head> <!-- The <head> element can include a title for the document, scripts, styles, meta information, and more. -->
+    <meta charset="utf-8"> <!-- The character encoding of the HTML page. Should only be used once. -->
+    <title>Jose Santana | Web Developer</title> <!-- The <title> tag is required in all HTML documents and it defines the title of the document. -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- The <link> tag defines a link between a document and an external resource (stylesheet.css). -->
+    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body> <!-- The <body> tag defines the document's body.
+  The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc. -->
+    <header class="main-header" id="top"> <!-- The <header> element represents a container for introductory content or a set of navigational links. -->
+        <a href="index.html" id="logo"> <!-- The <a> tag defines a hyperlink, which is used to link from one page to another. -->
+            <h1>Jose Santana</h1>
+            <h2>Web Developer</h2>
+        </a>
+        <nav> <!-- The <nav> tag defines a set of navigation links.
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links. -->
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="selected">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper" class="t-border" class="r-border"> <!-- The <div> tag defines a division or a section in an HTML document. -->
+    <section id="primary"> <!-- The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document. -->
+      <h3>General Information</h3>
+      <p>I am not currently looking for new design work, but I am available to speak in gigs and similar engagements. If you have any questions, please don't hestitate to contact me!</p>
+      <p>Please only use phone contact for urgent inquiries. Otherwise, twitter and email are the best way to reach me.</p>
+    </section>
+    <section id="secondary">
+      <h3>Contact Details</h3>
+      <ul class="contact-info">
+        <li class="phone"><a href="tel:978-555-2010">978-555-2010</a></li>
+        <li class="mail"><a href="mailto:jsantana@example.com">jsantana@example.com</a></li>
+        <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=JoseSantana2418">@JoseSantana2418</a></li>
+      </ul>
+    </section>
+  </div>
+  <footer> <!-- A <footer> element typically contains: authorship information, copyright information, contact information, sitemap, back to top links, related documents -->
+      <a href="http://twitter.com"><img src="img/twitterblue.png" alt="Twitter logo" class="social-icon"></a>
+      <a href="http://facebook.com"><img src="img/facebookblue.png" alt="Facebook logo" class="social-icon"></a>
+      <a href="http://plus.google.com/u/0/+JoseASantanaJr/posts"><img src="img/googleplus.png" alt="GooglePlus logo" class="social-icon"></a>
+      <p>&copy; 2016 Jose Santana</p>
+      <a href="#top" class="footer-color">Back to top &raquo;</a>
+  </footer>
+</body>
+
+</html>
