@@ -53,16 +53,16 @@ window.onload = function() {
     }
 
     // Final score is...
-    document.write("Your score is " + score + " Well done!");
+    document.getElementById('javascript').innerHTML = "Your score is " + score + " Well done!";
 
     // Medal Ceremony
     if (score === 5) {
-        document.write(" You received a GOLD MEDAL!");
+        document.getElementById('javascript').innerHTML = " You received a GOLD MEDAL!";
     } else if (score === 3 || score === 4) {
-        document.write(" You received a SILVER MEDAL!");
+        document.getElementById('javascript').innerHTML = " You received a SILVER MEDAL!";
     } else if (score === 1 || score === 2) {
-        document.write(" You received a BRONZE MEDAL!");
+        document.getElementById('javascript').innerHTML = " You received a BRONZE MEDAL!";
     } else {
-        document.write(" You received a pat on the back for playing!");
+        document.getElementById('javascript').innerHTML = " You received a pat on the back for playing!";
     }
 };
