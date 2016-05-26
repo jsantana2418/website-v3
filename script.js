@@ -6,7 +6,8 @@ var answer4 = 'jupiter'; // biggest planet in our solar system is jupiter
 var answer5 = 'yellow'; // the color of our sun is yellow
 var score = 0; // user score
 
-window.onload = function() {
+// code will run in browser once the user clicks on the button in the home page
+function javascriptGame() {
     // question 1
     var guess1 = prompt("What color is the moon?");
     if (guess1 === answer1) {
