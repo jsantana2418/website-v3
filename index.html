@@ -1,96 +1,109 @@
-<!DOCTYPE html>
-<!-- The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in. -->
-<html>
-<!-- The <html> tag tells the browser that this is an HTML document. -->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 
 <head>
-    <!-- The <head> element can include a title for the document, scripts, styles, meta information, and more. -->
     <meta charset="utf-8">
-    <!-- The character encoding of the HTML page. Should only be used once. -->
-    <title>Jose Santana | Web Developer</title>
-    <!-- The <title> tag is required in all HTML documents and it defines the title of the document. -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- The <link> tag defines a link between a document and an external resource (stylesheet.css). -->
-    <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
-    <!-- The <body> tag defines the document's body.
-  The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc. -->
-    <header class="main-header" id="top">
-        <!-- The <header> element represents a container for introductory content or a set of navigational links. -->
-        <a href="index.html" id="logo">
-            <!-- The <a> tag defines a hyperlink, which is used to link from one page to another. -->
-            <h1>Jose Santana</h1>
-            <h2>Web Developer</h2>
-        </a>
-        <nav>
-            <!-- The <nav> tag defines a set of navigation links.
-Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links. -->
-            <ul>
-                <li><a href="index.html" class="selected">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="wrapper" class="t-border">
-        <!-- The <div> tag defines a division or a section in an HTML document. -->
-        <section>
-            <h3>JavaScript Game: Click below to play the game.</h3>
-            <p><button type="button" onclick="javascriptGame()">Click here!</button></p>
-            <p id="javascript">Game result will be produced here once, completed. Thanks for playing.</p>
-            <ul id="gallery" class="cf">
-                <li>
-                    <a href="img/numbers-01.jpg">
-                        <img src="img/numbers-01.jpg" alt="">
-                        <!-- The <img> tag defines an image in an HTML page.
-The <img> tag has two required attributes: src and alt. -->
-                        <p>Experimentation with color and texture</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="img/numbers-02.jpg">
-                        <img src="img/numbers-02.jpg" alt="">
-                        <p>Playing with blending modes in Photoshop.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="img/numbers-06.jpg">
-                        <img src="img/numbers-06.jpg" alt="">
-                        <p>Trying to create an 80's of glows.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="img/numbers-09.jpg">
-                        <img src="img/numbers-09.jpg" alt="">
-                        <p>Drips created using Photoshop brushes.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="img/numbers-12.jpg">
-                        <img src="img/numbers-12.jpg" alt="">
-                        <p>Creating shapes using repetition.</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="section3.html">Section3</a></li>
+                    <li role="presentation"><a href="section4.html">Section4</a></li>
+                    <li role="presentation"><a href="section5.html">Section5</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">JavaScript Basics Projects</h3>
+        </div>
     </div>
-    <footer>
-        <!-- A <footer> element typically contains: authorship information, copyright information, contact information, sitemap, back to top links, related documents -->
-        <a href="http://twitter.com"><img src="img/twitterblue.png" alt="Twitter logo" class="social-icon"></a>
-        <a href="http://facebook.com"><img src="img/facebookblue.png" alt="Facebook logo" class="social-icon"></a>
-        <a href="http://plus.google.com/u/0/+JoseASantanaJr/posts"><img src="img/googleplus.png" alt="GooglePlus logo" class="social-icon"></a>
-        <p>&copy; 2016 Jose Santana</p>
-        <a href="#top" class="footer-color">Back to top &raquo;</a>
-    </footer>
-    <script src="script.js"></script>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Hello, world!</h1>
+            <p>This is my first project page broken down into different sections while combining the first two sections onto the homepage. JavaScript definitely feels like a foreign language. My goal here, especially on Github is to demonstrate my learning
+                experience as it evolves, I will apply what I learn along the way and hopefully come up with cool stuff to present to the public with coding. In addition, this will be my playground to experiment and maintain best practices in HTML, CSS,
+                and JavaScript: Front-End Developer.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Section: 1 & 2</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Section 3</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Section 4</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                    risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Section 5</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                    risus.</p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; JS 2016</p>
+        </footer>
+    </div>
+    <!-- /container -->
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script> -->
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+
+    <script src="js/section2.js"></script>
+
+
 </body>
 
 </html>
