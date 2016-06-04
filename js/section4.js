@@ -85,7 +85,7 @@ var answer5 = 'yellow'; // the color of our sun is yellow
 var score = 0; // user score
 
 // code will run in browser once the user clicks on the button in the home page
-function javascriptGame() {
+function conditionalGame() {
     // question 1
     var guess1 = prompt("What color is the moon?");
     if (guess1 === answer1) {
@@ -132,16 +132,21 @@ function javascriptGame() {
     }
 
     // Final score is...
-    document.getElementById('javascript').innerHTML = "Your score is " + score + " Well done!";
+    document.getElementById('jsConditionalGame').innerHTML =
+    "Your score is " + score + " Well done!";
 
     // Medal Ceremony
     if (score === 5) {
-        document.getElementById('javascript').innerHTML = " You received a GOLD MEDAL!";
+        document.getElementById('jsConditionalGame').innerHTML =
+        " You received a GOLD MEDAL!";
     } else if (score === 3 || score === 4) {
-        document.getElementById('javascript').innerHTML = " You received a SILVER MEDAL!";
+        document.getElementById('jsConditionalGame').innerHTML =
+        " You received a SILVER MEDAL!";
     } else if (score === 1 || score === 2) {
-        document.getElementById('javascript').innerHTML = " You received a BRONZE MEDAL!";
+        document.getElementById('jsConditionalGame').innerHTML =
+        " You received a BRONZE MEDAL!";
     } else {
-        document.getElementById('javascript').innerHTML = " You received a pat on the back for playing!";
+        document.getElementById('jsConditionalGame').innerHTML =
+        " You received a pat on the back for playing!";
     }
 };

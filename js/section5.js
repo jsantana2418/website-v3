@@ -44,3 +44,20 @@ For example to alert it or print to console or put it in a variable. */
 //     return randomNumber;
 // }
 // write( getRandomNumber( "one-hundred", 50 ) );
+
+
+
+
+
+
+//Random Number with Functions challenge
+/* The function will run first when the user button click
+section 5 Random Number Generator with FUNCTIONS.
+The HTML has it where the paragraph will update once the
+function argument has been passed in by the user input from
+prompt and return the value and update it on HTML page.
+*/
+function getRandomNumber( upper ) {
+  var randomNumber = Math.floor( Math.random() * upper ) + 1;
+  return randomNumber;
+}

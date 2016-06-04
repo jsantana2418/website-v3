@@ -45,11 +45,14 @@
 //
 //
 // // JavaScript variable code challenge
-// var noun = prompt("Please type in a noun?");
-// var profession = prompt("Please type in a profession?");
-// var verb = prompt("Please type in a verb?");
-// var adjective = prompt("Please type in a adjective?");
-// alert("All set!");
-// document.write("<h2>There was a person named " + noun +
-// " who was inspired by their life experience to become a " + profession +
-// " and " + verb + " after their goals because they felt " + adjective + ".</h2>");
+function variableStoryGame() {
+    var noun = prompt("Please type in a noun?");
+    var profession = prompt("Please type in a profession?");
+    var verb = prompt("Please type in a verb?");
+    var adjective = prompt("Please type in a adjective?");
+    alert("All done!");
+    document.getElementById('jsVarGame').innerHTML =
+        "There was a person named " + noun +
+        " who was inspired by their life experience to become a " + profession +
+        " and " + verb + " after their goals because they felt " + adjective + ".";
+}
